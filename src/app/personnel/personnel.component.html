@@ -1,0 +1,28 @@
+<div >
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Service Number</th>
+            <th>Branch</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of PersonnelList">
+            <td>{{dataItem.Name}}</td>
+            <td>{{dataItem.Rank}}</td>
+            <td>{{dataItem.Service_no}}</td>
+            <td>{{dataItem.Branch}}</td>
+            <td>
+                <button mat-button color="warn" type="button" (click)="updatepersonnel(dataItem.id)" class="btn btn-light mr-1">
+                  add Remarks
+                </button>
+                <button type="button" mat-button color="warn" (click)="deletepersonnel(dataItem.id)" class="btn btn-light mr-1">
+                    delete
+                </button> 
+            </td>
+        </tr>
+    </tbody>
+</table>

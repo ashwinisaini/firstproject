@@ -1,0 +1,34 @@
+<main class="form-signin">
+    <form [formGroup]="form" (submit)="submit()">
+      <h1 class="h3 mb-3 fw-normal">Please register</h1>
+  
+      <div class="form-floating">
+        <label>Name         </label>
+        <input formControlName="Name" class="form-control" placeholder="Name">
+        
+      </div>
+  
+      <div class="form-floating">
+        <label>Rank         </label>
+        <input formControlName="Rank" class="form-control" placeholder="Rank">
+      
+      </div>
+      <div class="form-floating">
+        <label>Branch         </label>
+        <input formControlName="Branch" class="form-control" placeholder="Branch">
+       
+      </div>
+      <div class="form-floating">
+        <label>Service_no        </label>
+        <input formControlName="Service_no" class="form-control" placeholder="Service_no">
+        
+      </div>
+  
+    
+  
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+    </form>
+  </main>
+
+  
+
